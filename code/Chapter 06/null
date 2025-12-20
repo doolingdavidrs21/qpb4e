@@ -1,0 +1,11 @@
+--2025-12-19 16:22:35--  https://raw.githubusercontent.com/nceder/qpb4e/main/code/Chapter%2006/moby_01.txt
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.111.133, 185.199.110.133, 185.199.109.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.111.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1509 (1.5K) [text/plain]
+Saving to: ‘moby_01.txt.1’
+
+     0K .                                                     100% 36.6M=0s
+
+2025-12-19 16:22:35 (36.6 MB/s) - ‘moby_01.txt.1’ saved [1509/1509]
+
