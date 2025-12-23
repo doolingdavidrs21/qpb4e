@@ -9,16 +9,37 @@ Run with: python3.12 gpu_benchmark.py
 """
 
 import time
+import traceback
 import numpy as np
 
 # We'll import cudf conditionally to allow testing pandas-only too
+HAS_CUDF = False
+cudf = None
+cp = None
+
 try:
-    import cudf
-    import cupy as cp
+    # Import cupy first and set device
+    import cupy as cp_module
+    cp_module.cuda.Device(0).use()
+
+    # Import cudf after CUDA is initialized
+    import cudf as cudf_module
+
+    # Test that it works
+    test_arr = cp_module.array([1, 2, 3])
+    test_df = cudf_module.DataFrame({'test': test_arr})
+    del test_arr, test_df
+
+    # Set globals
+    cp = cp_module
+    cudf = cudf_module
     HAS_CUDF = True
-except ImportError:
-    HAS_CUDF = False
-    print("Warning: cuDF not available, running pandas-only benchmark")
+    print(f"GPU detected: {cp.cuda.runtime.getDeviceProperties(0)['name'].decode()}")
+except ImportError as e:
+    print(f"Warning: cuDF not available ({e}), running pandas-only benchmark")
+except Exception as e:
+    print(f"Warning: CUDA initialization failed: {e}")
+    traceback.print_exc()
 
 import pandas as pd
 
@@ -82,6 +103,7 @@ def main():
             break
         except Exception as e:
             print(f"  Error: {e}")
+            traceback.print_exc()
             break
 
 
