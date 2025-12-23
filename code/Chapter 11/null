@@ -1,0 +1,11 @@
+--2025-12-23 09:08:27--  https://raw.githubusercontent.com/nceder/qpb4e/main/code/Chapter%2011/script5.py
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.108.133, 185.199.111.133, 185.199.109.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 236 [text/plain]
+Saving to: ‘script5.py.1’
+
+     0K                                                       100%  879K=0s
+
+2025-12-23 09:08:27 (879 KB/s) - ‘script5.py.1’ saved [236/236]
+
