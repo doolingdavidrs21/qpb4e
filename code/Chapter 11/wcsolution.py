@@ -16,6 +16,8 @@ def main():
     parser.add_argument("-l", "--lines", action="store_true", help="Count lines")
     parser.add_argument("-w", "--words", action="store_true", help="Count words")
     parser.add_argument("-c", "--chars", action="store_true", help="Count characters")
+    parser.add_argument("-L", "--Longest", action="store_true",
+                        help="Find the Longest Line")
     args = parser.parse_args()
 
     try:
@@ -35,5 +37,8 @@ def main():
         print(f"Words: {len(words)}")
     if args.chars:
         print(f"Characters: {len(content)}")
+    if args.Longest:
+        print(f"Longest Line: {max(lines, key=len)}")
+        print(f"Length of Longest Line: {len(max(lines, key=len))}")
 if __name__ == "__main__":
     main()
