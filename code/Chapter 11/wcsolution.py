@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 """wcsolution: Count lines, words, and characters in a file.
 Can also be run as a script with command-line arguments.
-usage as a script: python3 wcsolution.py <filename> [-l] [-w] [-c]"""
+usage as a script: python3 wcsolution.py word_count.tst [-l] [-w] [-c]"""
 import string
 import sys
 from argparse import ArgumentParser
