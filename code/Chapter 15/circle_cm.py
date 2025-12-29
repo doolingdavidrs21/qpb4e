@@ -17,4 +17,10 @@ class Circle:
         for c in cls.all_circles:          #C
             total = total + c.area()
         return total
-        
+
+    @classmethod
+    def total_circumference(cls):
+        total = 0
+        for c in cls.all_circles:
+            total = total + 2 * cls.pi * c.radius
+        return total
