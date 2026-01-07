@@ -1,8 +1,12 @@
 def hello_world():
     print("Hello, World!")
+    print("Hello, Fucked up Messed up World, what is better death or never having been born?")
+
+
 
 
 def main():
+    hello_world()
     hello_world()
 
     # Read temperature data from file
