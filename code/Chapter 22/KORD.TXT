@@ -1,0 +1,12 @@
+CHICAGO O'HARE INTERNATIONAL, IL, United States (KORD) 41-59N 087-55W 200M
+Jan 20, 2026 - 10:51 AM EST / 2026.01.20 1551 UTC
+Wind: from the WSW (250 degrees) at 9 MPH (8 KT):0
+Visibility: 10 mile(s):0
+Sky conditions: mostly clear
+Temperature: 8.1 F (-13.3 C)
+Windchill: -5 F (-21 C):2
+Dew Point: -4.0 F (-20.0 C)
+Relative Humidity: 57%
+Pressure (altimeter): 30.37 in. Hg (1028 hPa)
+ob: KORD 201551Z 25008KT 10SM FEW020 FEW250 M13/M20 A3037 RMK AO2 SLP301 T11331200 
+cycle: 16
